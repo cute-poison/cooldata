@@ -1,0 +1,515 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>cooldataplug</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css) " rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 2em 0;
+        }
+        .feature-item {
+            background: #f1f1f1;
+            padding: 1em;
+            border-radius: 5px;
+            text-align: center;
+            flex: 1 1 150px; /* Flex grow, shrink, basis */
+            margin: 10px;
+        }
+        .feature-item img {
+            max-width: 100px;
+            max-height: 100px;
+            object-fit: contain;
+        }
+        .card {
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card-body ul {
+    padding-left: 0;
+}
+
+.card-body ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.card-body ul li:before {
+    content: "•";
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small><i class="fa fa-phone-alt mr-2"></i>+2348000000000</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope mr-2"></i>cool@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>COOL-DATA PLUG</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="welcom.blade.php" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">About</a>
+                    <a href="#" class="nav-item nav-link">Pricing</a>
+                    <a href="#" class="nav-item nav-link">Contact</a>
+                </div>
+                <div id="google_translate_element"></div>  
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
+        <div class="container text-center my-5 py-5">
+            <h1 class="text-white display-1 mb-5">COOLDATA PLUG</h1>
+            <h1 class="text-white mt-4 mb-3">Naija No 1 Telecommunication services provider.</h1>        
+                        <button class= "button" onclick = "window.location.href='#';"><strong>REGISTER</strong></button>
+        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+    
+                <div class="features">
+                    <div class="section-title position-relative mb-4">
+                        <h1 class="display-4">COOL-DATA PLUG</h1>
+                    </div>
+                    <div>
+                    <p>Welcome to <strong>COOL-DATA PLUG</strong> We are a registered telecommunication company that provide voice or data transmission services, such as; <strong> Mobile Data, Cable Sub, Electric Bill, Airtime (VTU).</strong></p>
+                     <div class="features">
+        <div class="feature-item">
+            <img src="{{ asset('images/mtn.png') }}" alt="MTN">
+        </div>
+        <div class="feature-item">
+            <img src="{{ asset('images/airtel.png') }}" alt="Airtel">
+        </div>
+        <div class="feature-item">
+            <img src="{{ asset('images/glo.png') }}" alt="Glo">
+        </div>
+        <div class="feature-item">
+            <img src="{{ asset('images/9mobile.png') }}" alt="9mobile">
+        </div>
+        <div class="feature-item">
+            <img src="{{ asset('images/gotv.png') }}" alt="GOtv">
+        </div>
+        <div class="feature-item">
+            <img src="{{ asset('images/dstv.png') }}" alt="DStv">
+        </div>
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-image" style="margin: 90px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 my-5 pt-5 pb-lg-5">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Why Choose Us?</h6>
+                        <h1 class="display-4">BEST VTU PLATFORM</h1>
+                    </div>
+                    <p class="mb-4 pb-2"><strong>Cooldata Plug</strong> is a reliable vending platform to make airtime recharges, data bundles purchase and payment of utility bills in Nigeria. Our services are convenient, fast and secure with instant delivery of your transactions.  </p>
+                    <div class="d-flex mb-3">
+                        <div class="btn-icon bg-primary mr-4">
+                            <i class="fa fa-2x fa-check text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>EASY TO USED</h4>
+                            <p>Our platform is designed for ease of use, ensuring that you can quickly and effortlessly top up your mobile phone, pay for utility bills, and access other services with just a few clicks.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="btn-icon bg-secondary mr-4">
+                            <i class="fa fa-2x fa-check text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>WE ARE 100% SECURE</h4>
+                            <p>Your transactions are protected with the highest level of security. Our platform ensures that your personal and financial information is safe and secure at all times.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="btn-icon bg-warning mr-4">
+                            <i class="fa fa-2x fa-check text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>WE ARE RELIABLE</h4>
+                            <p class="m-0">Count on us for reliable and consistent service delivery. We ensure that your transactions are processed quickly and accurately, providing you with a seamless experience every time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/images.jpeg" style="object-fit: fit;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature Start -->
+
+     <div class="container-fluid ">
+        <div class="row mx-0 justify-content-center pt-5">
+            <div class="col-lg-6">
+                <div class="section-title text-center position-relative mb-3">
+                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">OUR PRICING</h6>
+                    <h1 class="display-4">AFFORDABLE DATA PLANS PRICE</h1>
+                </div>
+                    </div>
+    </div>
+            </div>
+            <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">MTN DATA</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li>50.0MB - ₦40 - 30 Days</li>
+                            <li>150.0MB - ₦66 - 30 Days</li>
+                            <li>250.0MB - ₦98 - 30 Days</li>
+                            <li>500.0MB - ₦140 - 30 Days</li>
+                            <li>1.0GB - ₦270 - 30 Days</li>
+                            <!-- Add more data plans here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">AIRTEL DATA</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li>100.0MB - ₦45 - 7 Days</li>
+                            <li>300.0MB - ₦100 - 7 Days</li>
+                            <li>500.0MB - ₦160 - 30 Days</li>
+                            <li>1.0GB - ₦300 - 30 Days</li>
+                            <li>2.0GB - ₦600 - 30 Days</li>
+                            <!-- Add more data plans here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">GLO DATA</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li>50.0MB - ₦45 - 1 Day</li>
+                            <li>150.0MB - ₦90 - 1 Day</li>
+                            <li>500.0MB - ₦130 - 30 Days</li>
+                            <li>1.0GB - ₦255 - 30 Days</li>
+                            <li>2.0GB - ₦510 - 30 Days</li>
+                            <!-- Add more data plans here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">9MOBILE DATA</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li>1.0GB - ₦350 - 30 Days</li>
+                            <li>500.0MB - ₦435 - 30 Days</li>
+                            <li>1.5GB - ₦680 - 30 Days</li>
+                            <li>2.0GB - ₦690 - 30 Days</li>
+                            <li>3.0GB - ₦875 - 30 Days</li>
+                            <!-- Add more data plans here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div> 
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Testimonial</h6>
+                        <h3 class="display-4">Customer Feedback</h3>
+                    </div>
+                    <p class="m-0">Our customers love our VTU services. Here is what some of them have to say about their experience with us.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="bg-white p-5">
+                                    <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                                    <p><strong>ABDULRAHMAN MUHAMMAD</strong></p>
+                                    <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                                        <div>
+                                            <h5>MTN User</h5>
+                                            <span>I have been using the VTU services for a few months now and it has been a game-changer for me. The top-up process is quick and seamless, and I have never faced any issues. Highly recommend!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="bg-white p-5">
+                                    <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                                    <p><strong>ABDULHADI WADA</strong></p>
+                                    <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                                        <div>
+                                            <h5>Airtel User</h5>
+                                            <span>The customer support is excellent. They are always available to help with any issues and the service itself is reliable and affordable. I am very satisfied with my experience.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more testimonials as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-2">
+        <div class="container py-2">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="bg-light d-flex flex-column justify-content-center px-5" style="height: 450px;">
+                        <div class="d-flex align-items-center mb-5">
+                            <div class="btn-icon bg-primary mr-4">
+                                <i class="fa fa-2x fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div class="mt-n1">
+                                <h4>Our Location</h4>
+                                <p class="m-0">KANO, Nigeria.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-5">
+                            <div class="btn-icon bg-secondary mr-4">
+                                <i class="fa fa-2x fa-phone-alt text-white"></i>
+                            </div>
+                            <div class="mt-n1">
+                                <h4>Call Us</h4>
+                                <p class="m-0">+23480000000</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="btn-icon bg-warning mr-4">
+                                <i class="fa fa-2x fa-envelope text-white"></i>
+                            </div>
+                            <div class="mt-n1">
+                                <h4>Email Us</h4>
+                                <p class="m-0">cool@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Need Help?</h6>
+                        <h1 class="display-4">Send Us A Message</h1>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required="required">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>COOL-DATA PLUG</h1>
+                    </a>
+                    <p class="m-0">Best Virtual Top-up Vendor.</p>
+                </div>
+                    </div>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Kano, Nigeria.</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+234800000000</p>
+                    <p><i class="fa fa-envelope mr-2"></i>cool@gmai.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
+                        <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">INTEGRATE OUR API</h3>
+                    
+                    <div class="d-flex flex-column justify-content-start">
+                        <p class="text-white-50 mb-2"></i>Are you a developer, Integrate our well-documented API that lets you earn from serving hundreds of thousands of customers. However huge or complex your imagination, you can build it with cooldataplug API.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                     <p class="m-0">Quick Links.</p>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
+                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 border-top py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="https://github.com/cute-poison">cooldata plug</a>. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0">Designed by <a class="text-white" href="https://github.com/cute-poison">cooldata plug</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+   
+    <!-- Template2 Javascript -->
+    <script type="text/javascript">  
+        function googleTranslateElementInit() {  
+            new google.translate.TranslateElement(  
+                {pageLanguage: 'en'},  
+                'google_translate_element'  
+            );  
+        }  
+    </script>  
+  
+<!-- Script code for google translator API -->  
+    <script type="text/javascript"   
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">  
+    </script>  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</body>
+
+</html>
